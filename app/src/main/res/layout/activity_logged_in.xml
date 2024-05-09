@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoggedInActivity">
+
+    <!-- Agrega un FrameLayout como fondo de toda la actividad -->
+
+    <!-- Puedes configurar una imagen de marcador de posición -->
+    <FrameLayout
+        android:id="@+id/background_dim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:elevation="50dp"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-44dp">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/carouselLayout"
+        android:layout_width="423dp"
+        android:layout_height="266dp"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/imageView22"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="416dp"
+            android:layout_height="185dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="90dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView22"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/background_dim"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="416dp"
+            android:layout_height="185dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="90dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView22"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/background_dim"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="416dp"
+            android:layout_height="185dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="90dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView22"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/background_dim"
+            tools:srcCompat="@tools:sample/avatars" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/redframe10"
+        android:layout_width="410dp"
+        android:layout_height="82dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/upperredframe" />
+
+    <Button
+        android:id="@+id/myprofile"
+        android:layout_width="331dp"
+        android:layout_height="51dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="164dp"
+        android:backgroundTint="@color/lightGreen"
+        android:fontFamily="sans-serif-black"
+        android:text="Mi Perfil"
+        android:textColorLink="@color/lightGreen"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:cornerRadius="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/HistoryDonationsButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/redframe10"
+        app:layout_constraintVertical_bias="0.79" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="182dp"
+        android:layout_height="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/myprofile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/redframe10"
+        app:layout_constraintVertical_bias="0.927"
+        app:srcCompat="@drawable/line"
+        app:tint="#424242" />
+
+    <Button
+        android:id="@+id/donacionesButton"
+        android:layout_width="331dp"
+        android:layout_height="51dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="400dp"
+        android:backgroundTint="@color/lightBlue"
+        android:fontFamily="sans-serif-black"
+        android:text="Donaciones"
+        android:textColorHighlight="@color/lightGreen"
+        android:textColorLink="@color/lightGreen"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:cornerRadius="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/redframe10" />
+
+    <Button
+        android:id="@+id/createPost"
+        android:layout_width="331dp"
+        android:layout_height="51dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/purple"
+        android:fontFamily="sans-serif-black"
+        android:text="Crear publicación"
+        android:textColorHighlight="@color/lightGreen"
+        android:textColorLink="@color/lightGreen"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:cornerRadius="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/donacionesButton" />
+
+    <Button
+        android:id="@+id/HistoryDonationsButton"
+        android:layout_width="331dp"
+        android:layout_height="51dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="232dp"
+        android:backgroundTint="@color/orange"
+        android:fontFamily="sans-serif-black"
+        android:text="Historial de donaciones"
+        android:textColorHighlight="@color/lightGreen"
+        android:textColorLink="@color/lightGreen"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:cornerRadius="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/donacionesButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/redframe10"
+        app:layout_constraintVertical_bias="0.794" />
+
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Cómo te podemos ayudar?"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/redframe10"
+        app:layout_constraintVertical_bias="0.924" />
+
+    <Button
+        android:id="@+id/dashButton"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:foreground="@drawable/mainmenubutton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createPost"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="182dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:elevation="100dp"
+        android:text="Menu"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/dashButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dashButton"
+        app:layout_constraintVertical_bias="0.36" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

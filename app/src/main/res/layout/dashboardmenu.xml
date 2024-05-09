@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="415dp"
+        android:layout_height="463dp"
+        android:background="@drawable/background_with_border_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/MainPageButton"
+        android:layout_width="381dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/red"
+        android:text="Página principal"
+        android:textAlignment="textEnd"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:cornerRadius="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/recaudacionesButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView10" />
+
+    <Button
+        android:id="@+id/recaudacionesButton"
+        android:layout_width="381dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="116dp"
+        android:backgroundTint="@color/red"
+        android:text="Recaudaciones"
+        android:textAlignment="textEnd"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:cornerRadius="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/HistoryButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView10" />
+
+    <Button
+        android:id="@+id/HistoryButton"
+        android:layout_width="381dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="212dp"
+        android:backgroundTint="@color/red"
+        android:text="Historial de donaciones"
+        android:textAlignment="textEnd"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:cornerRadius="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/ConfigButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView10"
+        app:layout_constraintVertical_bias="0.222" />
+
+    <Button
+        android:id="@+id/ConfigButton"
+        android:layout_width="381dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="324dp"
+        android:backgroundTint="@color/red"
+        android:text="Configuraciones"
+        android:textAlignment="textEnd"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:cornerRadius="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView10"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="93dp"
+        android:layout_height="71dp"
+        app:layout_constraintBottom_toBottomOf="@+id/MainPageButton"
+        app:layout_constraintEnd_toEndOf="@+id/MainPageButton"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/MainPageButton"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/baseline_home_24" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="102dp"
+        android:layout_height="72dp"
+        app:layout_constraintBottom_toBottomOf="@+id/recaudacionesButton"
+        app:layout_constraintEnd_toEndOf="@+id/recaudacionesButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/recaudacionesButton"
+        app:layout_constraintTop_toTopOf="@+id/recaudacionesButton"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/baseline_flag_24" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="76dp"
+        android:layout_height="81dp"
+        app:layout_constraintBottom_toBottomOf="@+id/HistoryButton"
+        app:layout_constraintEnd_toEndOf="@+id/HistoryButton"
+        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintStart_toStartOf="@+id/HistoryButton"
+        app:layout_constraintTop_toTopOf="@+id/HistoryButton"
+        app:srcCompat="@drawable/baseline_edit_24" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="98dp"
+        android:layout_height="74dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ConfigButton"
+        app:layout_constraintEnd_toEndOf="@+id/ConfigButton"
+        app:layout_constraintHorizontal_bias="0.014"
+        app:layout_constraintStart_toStartOf="@+id/ConfigButton"
+        app:layout_constraintTop_toTopOf="@+id/ConfigButton"
+        app:layout_constraintVertical_bias="0.516"
+        app:srcCompat="@drawable/baseline_settings_24" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/MainPageButton"
+        app:layout_constraintEnd_toEndOf="@+id/MainPageButton"
+        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintStart_toStartOf="@+id/MainPageButton"
+        app:layout_constraintTop_toTopOf="@+id/MainPageButton"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/line" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/recaudacionesButton"
+        app:layout_constraintEnd_toEndOf="@+id/recaudacionesButton"
+        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintStart_toStartOf="@+id/recaudacionesButton"
+        app:layout_constraintTop_toBottomOf="@+id/imageView15"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/line" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/HistoryButton"
+        app:layout_constraintEnd_toEndOf="@+id/HistoryButton"
+        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintStart_toStartOf="@+id/HistoryButton"
+        app:layout_constraintTop_toTopOf="@+id/HistoryButton"
+        app:layout_constraintVertical_bias="0.911"
+        app:srcCompat="@drawable/line" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/ConfigButton"
+        app:layout_constraintEnd_toEndOf="@+id/ConfigButton"
+        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintStart_toStartOf="@+id/ConfigButton"
+        app:layout_constraintTop_toTopOf="@+id/ConfigButton"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/line" />
+</androidx.constraintlayout.widget.ConstraintLayout>

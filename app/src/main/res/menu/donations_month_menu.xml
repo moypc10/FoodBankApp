@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/enero"
+        android:title="Enero" />
+    <item
+        android:id="@+id/febrero"
+        android:title="Febrero" />
+    <item
+        android:id="@+id/marzo"
+        android:title="Marzo" />
+    <item
+        android:id="@+id/abril"
+        android:title="Abril" />
+    <item
+        android:id="@+id/mayo"
+        android:title="Mayo" />
+    <item
+        android:id="@+id/junio"
+        android:title="Junio" />
+    <item
+        android:id="@+id/julio"
+        android:title="Julio" />
+    <item
+        android:id="@+id/agosto"
+        android:title="Agosto" />
+    <item
+        android:id="@+id/septiembre"
+        android:title="Septiembre" />
+    <item
+        android:id="@+id/octubre"
+        android:title="Octubre" />
+    <item
+        android:id="@+id/noviembre"
+        android:title="Noviembre" />
+    <item
+        android:id="@+id/diciembre"
+        android:title="Diciembre" />
+</menu>

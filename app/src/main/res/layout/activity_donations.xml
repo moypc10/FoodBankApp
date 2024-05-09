@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".Donations">
+
+    <!-- Agrega un FrameLayout como fondo de toda la actividad -->
+    <FrameLayout
+        android:id="@+id/background_dim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:visibility="invisible"
+        android:elevation="50dp">
+    </FrameLayout>
+
+
+    <ImageView
+        android:id="@+id/redframe10"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/upperredframe"
+    />
+
+
+    <Button
+        android:id="@+id/dashButton"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:foreground="@drawable/mainmenubutton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/redframe10"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="182dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:elevation="100dp"
+        android:text="Menu"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/dashButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dashButton"
+        app:layout_constraintVertical_bias="0.36" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="344dp"
+        android:layout_height="78dp"
+        android:background="@drawable/rounded_background_title"
+        android:elevation="4dp"
+        android:fontFamily="sans-serif-medium"
+        android:fontWeight="700"
+        android:letterSpacing="0"
+        android:text="Donaciones"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="52sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16" />
+
+    <Button
+        android:id="@+id/mont_donationms"
+        android:layout_width="155dp"
+        android:layout_height="48dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/button_background_orange"
+        android:fontFamily="sans-serif-black"
+        android:foreground="@drawable/button_background_orange"
+        android:text="Mes"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/dashButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.218"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/redframe10"
+        app:layout_constraintVertical_bias="0.232" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/mont_donationms"
+        app:layout_constraintTop_toTopOf="@+id/mont_donationms"
+        app:srcCompat="@drawable/arrow_drop_down"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="68dp" />
+
+    <TextView
+        android:id="@+id/textMesDonacion"
+        android:layout_width="155dp"
+        android:layout_height="48dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Mes"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/mont_donationms"
+        app:layout_constraintEnd_toEndOf="@+id/mont_donationms"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="@+id/mont_donationms"
+        app:layout_constraintTop_toTopOf="@+id/mont_donationms"
+        app:layout_constraintVertical_bias="0.0"
+        />
+
+    <Button
+        android:id="@+id/dontations_navbar"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/button_background_orange"
+        android:fontFamily="sans-serif-black"
+        android:foreground="@drawable/button_background_orange"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="..."
+        app:layout_constraintBottom_toTopOf="@+id/dashButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.77"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/redframe10"
+        app:layout_constraintVertical_bias="0.232" />
+
+    <TextView
+        android:id="@+id/textNavbarDonaciones"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="..."
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/dontations_navbar"
+        app:layout_constraintEnd_toEndOf="@+id/dontations_navbar"
+        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintStart_toStartOf="@+id/dontations_navbar"
+        app:layout_constraintTop_toTopOf="@+id/dontations_navbar"
+        app:layout_constraintVertical_bias="0.888" />
+
+    <ProgressBar
+        android:id="@+id/progressBarFood"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="381dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/progress_bar_food"
+        app:layout_constraintBottom_toTopOf="@+id/dashButton"
+        app:layout_constraintEnd_toEndOf="@+id/progressBarMoney"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/progressBarMeds"
+        app:layout_constraintTop_toBottomOf="@+id/progressBarMeds"
+        app:layout_constraintVertical_bias="0.244"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewGoalMeds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="0"
+        android:textColor="#9d9a9a"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/progressBarMeds"
+        app:layout_constraintEnd_toEndOf="@+id/progressBarMeds"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewGoalFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="0"
+        android:textColor="#9d9a9a"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/progressBarFood"
+        app:layout_constraintEnd_toEndOf="@+id/progressBarFood"
+        tools:ignore="MissingConstraints" />
+
+    <ProgressBar
+        android:id="@+id/progressBarMeds"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="381dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/progress_bar_meds"
+        app:layout_constraintBottom_toTopOf="@+id/dashButton"
+        app:layout_constraintEnd_toEndOf="@+id/progressBarMoney"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/progressBarMoney"
+        app:layout_constraintTop_toBottomOf="@+id/progressBarMoney"
+        app:layout_constraintVertical_bias="0.042"
+        tools:ignore="MissingConstraints" />
+
+    <ProgressBar
+        android:id="@+id/progressBarMoney"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="381dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="74dp"
+        android:layout_marginBottom="268dp"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/progress_bar_money"
+        app:layout_constraintBottom_toTopOf="@+id/dashButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mont_donationms"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Comida"
+        android:textColor="#F5BF13"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/progressBarFood"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewDonationMeds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="0"
+        android:textColor="#2D8DE5"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/progressBarMeds"
+        app:layout_constraintStart_toStartOf="@+id/progressBarMeds"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/textViewDonationMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="0"
+        android:textColor="#33b84b"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/progressBarMoney"
+        app:layout_constraintStart_toStartOf="@+id/progressBarMoney"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewMeds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Medicinas"
+        android:textColor="#2D8DE5"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/progressBarMeds"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewDonationFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="0"
+        android:textColor="#F5BF13"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/progressBarFood"
+        app:layout_constraintStart_toStartOf="@+id/progressBarFood"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Ropa"
+        android:textColor="#33b84b"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/progressBarMoney"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewGoalMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="0"
+        android:textColor="#9d9a9a"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/progressBarMoney"
+        app:layout_constraintEnd_toEndOf="@+id/progressBarMoney"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/moneyEmoji"
+        android:layout_width="56dp"
+        android:layout_height="50dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/progressBarMoney"
+        app:layout_constraintEnd_toStartOf="@+id/textViewMoney"
+        app:layout_constraintStart_toEndOf="@+id/textViewDonationMoney"
+        app:layout_constraintTop_toBottomOf="@+id/mont_donationms"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/check" />
+
+    <ImageView
+        android:id="@+id/medsEmoji"
+        android:layout_width="56dp"
+        android:layout_height="50dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/progressBarMeds"
+        app:layout_constraintEnd_toStartOf="@+id/textViewMeds"
+        app:layout_constraintHorizontal_bias="0.657"
+        app:layout_constraintStart_toEndOf="@+id/textViewDonationMeds"
+        app:layout_constraintTop_toBottomOf="@+id/progressBarMoney"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/check" />
+
+    <ImageView
+        android:id="@+id/foodEmoji"
+        android:layout_width="56dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="6dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/progressBarFood"
+        app:layout_constraintEnd_toStartOf="@+id/textViewFood"
+        app:layout_constraintHorizontal_bias="0.568"
+        app:layout_constraintStart_toEndOf="@+id/textViewDonationFood"
+        app:layout_constraintTop_toBottomOf="@+id/progressBarMeds"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/check" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
